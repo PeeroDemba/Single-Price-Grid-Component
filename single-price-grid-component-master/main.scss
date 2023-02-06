@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+}
+
+main.container {
+  max-width: 35rem;
+  min-height: 15rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+
+  & .card1 {
+    background-color: white;
+    padding: 2rem;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    margin-top: 6rem;
+
+    & h1 {
+      font-size: 2rem;
+      color: hsl(179, 70%, 46%);
+      margin-bottom: 1rem;
+    }
+
+    & h3 {
+      color: hsl(71, 73%, 54%);
+      margin-bottom: 0.8rem;
+    }
+
+    & p {
+      line-height: 1.3rem;
+    }
+  }
+
+  & .divider {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+
+    & .card2 {
+      background-color: hsl(179, 62%, 43%);
+      padding: 2rem;
+      border-bottom-left-radius: 0.3rem;
+
+      h3 {
+        margin-bottom: 0.8rem;
+      }
+
+      p {
+        margin-bottom: 0.8rem;
+
+        & span {
+          font-size: 2rem;
+          font-weight: 900;
+        }
+      }
+
+      & a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        margin-top: 2rem;
+        padding: 0.7rem 1rem;
+        border-radius: 0.3rem;
+        background-color: hsl(71, 73%, 54%);
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+
+    & .card3 {
+      background-color: hsl(179, 70%, 46%);
+      padding: 2rem;
+      border-bottom-right-radius: 0.3rem;
+
+      & h3 {
+        margin-bottom: 1rem;
+      }
+
+      & ul {
+        & li {
+          list-style-type: none;
+          line-height: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+footer p.attribution {
+  font-size: 0.7rem;
+  text-align: center;
+
+  & a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media (max-width: 550px) {
+  main.container {
+    max-width: 20rem;
+    min-height: 15rem;
+    & .card1 {
+      background-color: white;
+      padding: 1.8rem;
+      border-top-left-radius: 0.3rem;
+      border-top-right-radius: 0.3rem;
+      margin-top: 3rem;
+
+      h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    & .divider {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      & .card2 {
+        border-bottom-left-radius: 0;
+
+        & a {
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      & .card3 {
+        border-bottom-right-radius: 0.3rem;
+        border-bottom-left-radius: 0.3rem;
+      }
+    }
+  }
+}
