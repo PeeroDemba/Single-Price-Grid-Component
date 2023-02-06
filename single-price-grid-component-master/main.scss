@@ -11,7 +11,7 @@ body {
 }
 
 main.container {
-  max-width: 35rem;
+  max-width: 39rem;
   min-height: 15rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -22,7 +22,7 @@ main.container {
     padding: 2rem;
     border-top-left-radius: 0.3rem;
     border-top-right-radius: 0.3rem;
-    margin-top: 6rem;
+    margin-top: 8rem;
 
     & h1 {
       font-size: 2rem;
