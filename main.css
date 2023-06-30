@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+}
+
+main {
+  min-height: 97vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 36rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: auto;
+}
+.container .card1 {
+  background-color: white;
+  padding: 2rem 5rem 2rem 2rem;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  height: 13rem;
+}
+.container .card1 h1 {
+  font-size: 1.5rem;
+  color: hsl(179, 70%, 46%);
+  margin-bottom: 1.5rem;
+}
+.container .card1 h3 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 1rem;
+}
+.container .card1 p {
+  line-height: 1.5rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+.container .divider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+}
+.container .divider .card2 {
+  background-color: hsl(179, 62%, 43%);
+  padding: 2rem;
+  border-bottom-left-radius: 0.3rem;
+}
+.container .divider .card2 h3 {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+.container .divider .card2 p {
+  margin-bottom: 0.8rem;
+  color: white;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+.container .divider .card2 p span {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-right: 0.5rem;
+  color: white;
+}
+.container .divider .card2 .price {
+  color: #ddd;
+}
+.container .divider .card2 a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin-top: 2rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.3rem;
+  background-color: hsl(71, 73%, 54%);
+  font-size: 0.8rem;
+}
+.container .divider .card2 a:hover {
+  opacity: 0.9;
+}
+.container .divider .card3 {
+  background-color: hsl(179, 70%, 46%);
+  padding: 2rem;
+  border-bottom-right-radius: 0.3rem;
+}
+.container .divider .card3 h3 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.container .divider .card3 ul li {
+  list-style-type: none;
+  line-height: 1.3rem;
+  font-size: 0.8rem;
+  color: #eee;
+}
+
+footer p.attribution {
+  font-size: 0.7rem;
+  text-align: center;
+}
+footer p.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 500px) {
+  main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .container {
+    max-width: 20rem;
+    min-height: 15rem;
+  }
+  .container .card1 {
+    background-color: white;
+    padding: 1.8rem;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    margin-top: 3rem;
+    height: 16rem;
+  }
+  .container .card1 h1 {
+    font-size: 1.2rem;
+  }
+  .container .card1 h3 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .container .divider {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .container .divider .card2 {
+    border-bottom-left-radius: 0;
+  }
+  .container .divider .card2 a:hover {
+    opacity: 1;
+  }
+  .container .divider .card3 {
+    border-bottom-right-radius: 0.3rem;
+    border-bottom-left-radius: 0.3rem;
+  }
+}
